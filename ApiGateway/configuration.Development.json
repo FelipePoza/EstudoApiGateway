@@ -1,7 +1,7 @@
 {
-  "ReRoutes": [
+  "Routes": [
     {
-      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamPathTemplate": "/catalogo",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -9,11 +9,11 @@
           "Port": 44309
         }
       ],
-      "UpstreamPathTemplate": "/api1/{everything}",
+      "UpstreamPathTemplate": "/api/catalogo",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
     },
     {
-      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamPathTemplate": "/pedido",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -21,7 +21,7 @@
           "Port": 44326
         }
       ],
-      "UpstreamPathTemplate": "/api2/{everything}",
+      "UpstreamPathTemplate": "/api/pedido",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
     }
   ],
